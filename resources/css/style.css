@@ -117,18 +117,20 @@ header .mobile {
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
   background-image: url("/Users/MSC/Projects_local/F1C1_start/resources/images/banner-landingpage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #sign-up-cta {
-  padding: 0 5rem 2.5rem 5rem;
+  padding: 32px 80px 56px 80px;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-left: 100px;
 }
 
 #sign-up-cta .content {
@@ -219,6 +221,7 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  width: inherit;
 }
 
 .feature {
@@ -226,12 +229,32 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  height: 635px;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+}
+
+.feature .image-container img {
+  background-position: center;
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+
+}
+
+.content {
+  height: 100%;
+}
+.center .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 187px;
 }
 
 .feature h2 {
@@ -299,8 +322,17 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
+}
+
+.images-container .image-container {
+  overflow: hidden;
+}
+
+.images-container .image-container img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -339,12 +371,14 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
+  display: flex;
+  justify-content: center;
 }
 
-#quotes-section quote {
-  padding-right: 1.875rem;
+#quotes-section .quote {
+  padding-right: 30px;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
